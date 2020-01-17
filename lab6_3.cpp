@@ -2,7 +2,15 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+    
+    if (int(x) >= 65 && int(x) <= 90) {
+        short num = (short) x - 1;
+        
+        return (num < 65 ? 'Z' : num);
+    }
+    else {
+        return '0';
+    }
 }
 
 int main(){
